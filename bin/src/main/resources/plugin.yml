@@ -1,0 +1,4 @@
+name: btelnyy-lifesteal
+main: me.btelnyy.lifesteal.LifeSteal
+version: ${project.version}
+api-version: 1.18

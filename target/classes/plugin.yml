@@ -1,0 +1,9 @@
+name: btelnyy-lifesteal
+main: me.btelnyy.lifesteal.LifeSteal
+version: 1.0.0
+api-version: 1.18
+commands:
+   sethealth:
+      description: set max health of a player
+      usage: /sethealth <player> <amount>
+      permission: btelnyy.command.setmaxhealth 

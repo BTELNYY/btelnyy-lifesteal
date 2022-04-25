@@ -1,0 +1,2 @@
+#how much hp should be taken per kill? (by default a player has 20 hp, 2 hp = one heart, accepts decimals)
+hp_taken_per_kill: 2
