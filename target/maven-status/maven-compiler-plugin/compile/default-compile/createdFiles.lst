@@ -1,6 +1,0 @@
-me\btelnyy\lifesteal\commands\CommandSetHealth.class
-me\btelnyy\lifesteal\constants\Globals.class
-me\btelnyy\lifesteal\LifeSteal.class
-me\btelnyy\lifesteal\service\TextFileMessageService.class
-me\btelnyy\lifesteal\service\ConfigLoaderService.class
-me\btelnyy\lifesteal\listener\EventListener.class
