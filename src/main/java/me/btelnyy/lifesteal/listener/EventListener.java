@@ -1,5 +1,6 @@
 package me.btelnyy.lifesteal.listener;
 
+import org.bukkit.GameMode;
 import org.bukkit.attribute.Attribute;
 import org.bukkit.attribute.AttributeInstance;
 import org.bukkit.entity.Player;
@@ -21,7 +22,12 @@ public class EventListener implements Listener {
         AttributeInstance killermaxhp = killerPlayer.getAttribute(Attribute.GENERIC_MAX_HEALTH);
         double deadoldvalue = deadmaxhp.getValue();
         double killeroldvalue = killermaxhp.getValue();
+        if(!((deadoldvalue - Globals.heartsPunishment) <= 0)){
+            killermaxhp.setBaseValue(killeroldvalue + Globals.heartsPunishment);
+        }
+        if(deadoldvalue - Globals.heartsPunishment <= 0 && Globals.eliminateOnZeroHealth){
+            deadPlayer.setGameMode(GameMode.SPECTATOR);
+        }
         deadmaxhp.setBaseValue(deadoldvalue - Globals.heartsPunishment);
-        killermaxhp.setBaseValue(killeroldvalue + Globals.heartsPunishment);
     }
 }

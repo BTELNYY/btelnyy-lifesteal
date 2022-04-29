@@ -20,5 +20,7 @@ public final class ConfigLoaderService {
     public void loadConfig() {
         Globals.heartsPunishment = config.getDouble("hp_taken_per_kill");
         logger.log(Level.INFO, "hp_taken_per_kill: " + Globals.heartsPunishment);
+        Globals.eliminateOnZeroHealth = config.getBoolean("eliminateOnZeroHealth");
+        logger.log(Level.INFO, "eliminateOnZeroHealth: " + Globals.eliminateOnZeroHealth);
     }
 }
