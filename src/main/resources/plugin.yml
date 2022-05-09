@@ -7,3 +7,7 @@ commands:
       description: set max health of a player
       usage: /sethealth <player> <amount>
       permission: btelnyy.command.setmaxhealth 
+   givehealth:
+      description: give some of your health to another player
+      usage: /givehealth <player> <amount>
+      permission: btelnyy.command.givehealth

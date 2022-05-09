@@ -28,6 +28,7 @@ public class LifeSteal extends JavaPlugin {
         configLoaderService.loadConfig();
         //commands
         registerCommandExecutor("sethealth", new CommandSetHealth());
+        registerCommandExecutor("givehealth", new CommandGiveHearts());
         //event handle
         getServer().getPluginManager().registerEvents(new EventListener(), this);
         //github
