@@ -9,3 +9,6 @@
 > `/sethealth <player> <amount>`
 * Set a players health
 * Permission: `btelnyy.command.setmaxhealth`
+> `/givehealth <player> <amount>`
+* Give another player some of your hearts
+* Permission: `btelnyy.command.givehealth`
