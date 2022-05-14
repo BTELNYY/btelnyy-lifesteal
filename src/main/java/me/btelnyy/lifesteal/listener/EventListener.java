@@ -7,6 +7,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.PlayerDeathEvent;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 
 
@@ -31,6 +32,7 @@ public class EventListener implements Listener {
         if(deadoldvalue - Globals.heartsPunishment <= 0 && Globals.eliminateOnZeroHealth){
             deadPlayer.setGameMode(GameMode.SPECTATOR);
             deadPlayer.sendMessage(ChatColor.GRAY + "You have lost all your hearts and have been eliminated!");
+            Bukkit.broadcastMessage(deadPlayer.getName() + " lost thier final heart to " + killerPlayer.getName());
         }
         deadmaxhp.setBaseValue(deadoldvalue - Globals.heartsPunishment);
     }
